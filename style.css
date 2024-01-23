@@ -1,0 +1,365 @@
+@font-face {
+  font-family: Bookerly;
+  src: url(fonts/Bookerly.ttf);
+}
+
+* {
+  user-select: none;
+  margin: 0;
+  color: whitesmoke;
+  font-family: Bookerly;
+}
+
+body {
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+}
+
+header {
+  font-size: large;
+  padding: 0.5rem 0 1rem 1rem;
+  background-color: black;
+}
+
+nav {
+  float: right;
+  padding-top: 1rem;
+}
+
+a {
+  padding-right: 2rem;
+  color: aqua;
+  text-decoration-line: none;
+  position: relative;
+  transition: .3s ease-in-out;
+}
+
+a:hover{
+  color: hotpink;
+}
+
+div#nav a::before {
+  content: '';
+  position: absolute;
+  width: 80%;
+  height: 1px;
+  border-radius: 1rem;
+  background-color: aliceblue;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+div#nav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.cour section.box1 div#box1 h1{
+  box-shadow: inset 0 0 0 0 black;
+  transition: .3s ease-in-out;  
+}
+
+.cour section.box1 div#box1 h1:hover {
+  color: aquamarine;
+}
+
+.head{
+  background: linear-gradient(109.6deg, rgb(14, 11, 56) 11.2%, rgb(239, 37, 37) 91.1%);
+  margin-bottom: 2rem;
+}
+
+header h2 {
+  display: inline;
+  font-family: monospace;
+  font-size: 250%;
+}
+
+.cour, .fac , .test {
+  padding: 2.5rem 10% 2.5rem 10%;  
+  text-align: left;
+}
+
+.fac {
+  background: linear-gradient(109.6deg, rgb(20, 30, 48) 11.2%, rgb(36, 59, 85) 91.1%);
+}
+
+.test{
+  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+div.title h1 {
+  padding: 1rem 0 1rem 0;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5rem;
+  color: hotpink;
+}
+
+#mono {
+  font-family: monospace, 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+.title{
+  padding: 1rem 0 2.5rem 0;
+  text-align: center;
+}
+
+hr{
+  border-radius: 1rem;
+  margin: 0 10% 1rem 10%;
+}
+
+.sub{
+  word-spacing: 0.2rem;
+  letter-spacing: 0.08rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  margin: 0 20% 0 20%;
+}
+
+.cor{
+  font-family: monospace, 'Times New Roman', Times, serif;
+  display: inline;
+  color: cadetblue;
+}
+
+h1{
+  color: cadetblue;
+}
+
+.box1{
+  padding-top: 2rem;
+  display: flex;
+  gap: 2rem 2rem;
+  flex-wrap: wrap;
+  word-spacing: 0.18rem;
+  letter-spacing: 0.055rem;
+}
+
+#box1{
+  font-size: normal;
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  max-width: 43%;
+  overflow: auto;
+}
+
+#box1 h1{
+  padding-bottom: 1rem;
+}
+
+img{
+  width: 40%;
+  border-radius: 1rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
+}
+
+#cen{
+  text-align: center;
+}
+
+#box2{
+  border: 1px solid white;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  max-width: 46%;
+  overflow: auto;
+}
+
+.card {
+  background-color: #333;
+  color: #fff;
+  padding: 3rem;
+}
+
+h1#first{
+  font-family: monospace, 'Times New Roman', Times, serif;
+  padding-bottom: 2rem;
+}
+
+#tes {
+  margin-bottom: 1rem;
+}
+
+#auth {
+  font-size: x-large;
+  font-style: italic;
+}
+
+#pre, #nex {
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  padding: 0.6rem 1.3rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  margin: 0.4rem 0.2px;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+#pre:hover, #nex:hover {
+  background-color: #3e8e41;
+}
+
+@media only screen and (max-width: 770px) {
+  
+  *{
+    font-size: 90%;
+  }
+  
+  div.title h1{
+    font-size: 400%;
+  }
+  
+  h1{
+    font-size: 200%;
+  }
+  
+  nav {
+    font-size: 60%;
+    padding: 0.1rem;
+  }
+  
+  header h2{
+    font-size: 100%;
+  }
+  
+  a{
+    padding: 0 1rem 0 0;
+  }
+  
+  p.sub{
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  
+  p#mono{
+    margin: 0 1px 0 1px;
+  }
+  
+  div.cour{
+    padding: 5px;
+  }
+  
+  @media only screen and (max-width: 769px) {
+    
+    .box1{
+      gap: 1rem 1rem;
+      padding-top: 1rem;
+    }
+    
+    #box1{
+      max-width: 46.1%;
+      padding: 0.7rem;
+    }
+    
+    @media only screen and (max-width: 616px) {
+      
+      .box1{
+        gap: 1rem 1rem;
+        padding-top: 1rem;
+      }
+      
+      #box1{
+        max-width: 45.1%;
+        padding: 0.7rem;
+      }
+      
+      @media only screen and (max-width: 425px) {
+        
+        .box1{
+          gap: 1rem 1rem;
+          padding-top: 1rem;
+        }
+        
+        #box1{
+          max-width: 42.85%;
+          padding: 0.7rem;
+        }
+        
+        @media only screen and (max-width: 375px) {
+          
+          .box1{
+            gap: 1rem 1rem;
+            padding-top: 1rem;
+          }
+          
+          #box1{
+            max-width: 41.95%;
+            padding: 0.7rem;
+          }
+          
+          @media only screen and (max-width: 320px) {
+            
+            .box1{
+              gap: 1rem 1rem;
+              padding-top: 1rem;
+            }
+            
+            #box1{
+              max-width: 40%;
+              padding: 0.7rem;
+            }
+            
+          }
+          
+        }
+        
+        
+      }
+      
+    }
+    
+  }
+  
+  div.fac{
+    padding: 5px;
+  }
+  
+  h1#tes{
+    font-size: 130%;
+    font-weight: lighter;
+  }
+  
+  h1#first{
+    padding-bottom: 1rem;
+  }
+  
+  div.card{
+    padding: 1rem;
+  }
+  
+  p#auth{
+    font-size: 130%;
+  }
+  
+  #pre, #nex{
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  
+}
+
+footer{
+  text-align: center;
+  background-color: black;
+}
