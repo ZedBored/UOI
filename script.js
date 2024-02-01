@@ -33,6 +33,4 @@ nex.addEventListener('click', next);
 
 var date = new Date().getFullYear();
 
-console.log(date);
-
 var foot = document.getElementById('foo').innerHTML = `Copyright &copy;	${date} All Right Reserved By UOI`;
