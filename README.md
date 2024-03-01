@@ -4,5 +4,5 @@ many billioners have studies from this school including the famous John Doe and 
 
 ## Link
 ```
-https://zedcord0.github.io/UOI/
+https://genzene.github.io/UOI/
 ```
